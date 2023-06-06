@@ -189,9 +189,9 @@
   }
 
   #Projects{
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover ;
-  background-position: center;
+  background-position: center; */
 	padding: 20px;
 	padding-top: 120px;
   }
