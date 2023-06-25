@@ -4,9 +4,10 @@
 	margin: 0;
 	padding: 0;
   }
+  @import url('https://fonts.cdnfonts.com/css/Fira Sans');
   
   body {
-	font-family: Arial, sans-serif;
+	font-family: "Fira Sans";
 	font-size: 16px;
 	line-height: 1.5;
 	overflow: visible;
@@ -41,6 +42,15 @@
     top: auto;
     bottom: 0;
 }
+
+#preloader{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background: #fff url(./images/loading.gif) no-repeat center center;
+    background-size: 15%;
+  }
   
   /* Header Styles */
   header {
