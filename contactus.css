@@ -357,9 +357,7 @@
 
   @media only screen and (max-width: 800px){
 	/* Header Styles */
-	header {
-	  padding: 0.5rem;
-	}
+	
 
 	.desktop{
 		display: none;
@@ -387,26 +385,31 @@
 		margin-bottom: 1rem;
 	  }
 	  
-	  .logo {
-		margin-bottom: 1px;
+	  .logo{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	  }
 	  
 	  /* Hamburger menu styles */
 	  .hamburger {
+		background-color: transparent;
 		display: block;
 		cursor: pointer;
-		padding: 0.5rem;
-		position: absolute;
-		top: 1rem;
-		right: 1rem;
+		padding: 3px;
+		/* position: absolute;
+		top: 23px;
+		right: 23px; */
+		margin-right: 5px;
 		z-index: 1;
 	  }
 	  
 	  .hamburger span {
-		background-color: #000;
+		background-color:#000;
 		display: block;
-		height: 3px;
+		height: 2.5px;
 		margin-bottom: 5px;
+		margin-top: 2px;
 		width: 25px;
 	  }
 	  
@@ -415,19 +418,15 @@
 		display: none;
 	  }
   
-	.logo {
-	  font-size: 1.5rem;
-	}
   
 	.logo img {
-	  max-width: 30%;
+	  max-width: 40%;
 	  margin-right: 0.5rem;
 	}
   
 	nav ul li {
 	  margin-left: 1rem;
 	}
-  
 	/* .hero-image {
 	  height: 60vh;
 	}
@@ -467,4 +466,54 @@
      .contactus-right{
       width: 80%;
      }
+
+     .footer-content{
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer-logo{
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+
+	  }
+	
+	  .social-icons{
+		width: 90%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+	  }
+	
+	  
+	
+	  .phoneno-email{
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+	  }
+	  
+	
+	  .address{
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	  }
+
+	  .address p{
+		margin-right: 0%;
+		text-align: center;
+	  }
 }

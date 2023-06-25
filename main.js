@@ -99,7 +99,7 @@ function menudisplay(){
   
   
     // Automatically advance slides every 3 seconds
-    setInterval(function() {
-      showSlide(currentSlide + 1);
-    }, 4000);
+    // setInterval(function() {
+    //   showSlide(currentSlide + 1);
+    // }, 4000);
   });

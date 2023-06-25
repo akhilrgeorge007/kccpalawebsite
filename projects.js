@@ -1,3 +1,14 @@
+function menudisplay(){
+    if(window.getComputedStyle(document.getElementsByClassName('desktop-menu')[0]).display=='none'){
+      document.getElementsByClassName('desktop-menu')[0].style.display = "flex"
+    }
+    else{
+      document.getElementsByClassName('desktop-menu')[0].style.display = "none"
+    }
+  
+  
+  }
+
 document.addEventListener("DOMContentLoaded", function () {
   const projectCards = document.querySelectorAll(".project-card");
   var imageCarousel = document.querySelectorAll(".image-carousel");
