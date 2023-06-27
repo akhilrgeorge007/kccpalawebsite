@@ -53,17 +53,17 @@
     background-size: 15%;
   }
 
-  .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #193dbf; /* Dark Green */
-    border-radius: 50%;
-	padding: 10px;
-    width: 130px;
-    height: 130px;
-    animation: spinloader 2s linear infinite;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.loader {
+border: 16px solid #f3f3f3; /* Light grey */
+border-top: 16px solid #193dbf; /* Dark Green */
+border-radius: 50%;
+padding: 10px;
+width: 130px;
+height: 130px;
+animation: spinloader 2s linear infinite;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .loader img{
     height : 120px;

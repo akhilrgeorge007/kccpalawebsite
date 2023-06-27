@@ -10,13 +10,19 @@ function menudisplay(){
   }
 
   const loader = document.getElementById("preloader")
+  window.addEventListener("load",function(){
+    window.scrollTo(0, 0);
+    setTimeout(function(){
+      loader.style.display="none";
+      });
+    })
 
   document.addEventListener('DOMContentLoaded', function() {
 
     window.scrollTo(0, 0);
-  setTimeout(function(){
-    loader.style.display="none";
-    });
+  // setTimeout(function(){
+  //   loader.style.display="none";
+  //   },4000);
     var carouselItems = document.querySelectorAll('.carousel-item');
     var carouselItemsh1 = document.querySelectorAll('.carousel-item h1');
     var currentSlide = 0;

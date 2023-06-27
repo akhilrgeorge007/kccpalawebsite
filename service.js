@@ -9,10 +9,9 @@ function menudisplay(){
   
   }
   const loader = document.getElementById("preloader")
-  document.addEventListener('DOMContentLoaded', function() {
-
+  window.addEventListener("load",function(){
     window.scrollTo(0, 0);
-  setTimeout(function(){
-    loader.style.display="none";
-    });
-})
+    setTimeout(function(){
+      loader.style.display="none";
+      });
+    })
