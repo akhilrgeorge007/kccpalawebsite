@@ -8,3 +8,11 @@ function menudisplay(){
   
   
   }
+  const loader = document.getElementById("preloader")
+  document.addEventListener('DOMContentLoaded', function() {
+
+    window.scrollTo(0, 0);
+  setTimeout(function(){
+    loader.style.display="none";
+    });
+})

@@ -5,13 +5,51 @@
 	padding: 0;
   }
   @import url('https://fonts.cdnfonts.com/css/Fira Sans');
-  
+  html{
+	scroll-behavior: smooth;
+  }
   body {
 	font-family: "Fira Sans";
 	font-size: 16px;
 	line-height: 1.5;
 	overflow: visible;
   }
+
+  #preloader{
+    height: 100vh;
+    width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-size: 15%;
+  }
+
+  .loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #193dbf; /* Dark Green */
+    border-radius: 50%;
+	padding: 10px;
+    width: 130px;
+    height: 130px;
+    animation: spinloader 2s linear infinite;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loader img{
+    height : 120px;
+    width : 120px;
+    animation: spinlogo 2s linear infinite;
+}
+@keyframes spinloader {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes spinlogo {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
 
   .left, .right {
     width: 20px;

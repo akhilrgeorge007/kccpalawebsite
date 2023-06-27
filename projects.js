@@ -8,8 +8,12 @@ function menudisplay(){
   
   
   }
-
+  const loader = document.getElementById("preloader")
 document.addEventListener("DOMContentLoaded", function () {
+    window.scrollTo(0, 0);
+  setTimeout(function(){
+    loader.style.display="none";
+    });
   const projectCards = document.querySelectorAll(".project-card");
   var imageCarousel = document.querySelectorAll(".image-carousel");
   console.log(imageCarousel.length);
