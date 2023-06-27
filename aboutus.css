@@ -300,6 +300,19 @@ main{
     justify-content: center;
 }
 
+.aboutus-right.animate{
+  animation: fade-in 3s;
+}
+@keyframes fade-in {
+    0%{
+      opacity: 0;
+      transform: translateY(50px) scale(0.5);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+    }
+  }
 .aboutus-right p{
     width: 90%;
 }

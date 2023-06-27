@@ -277,14 +277,31 @@ display: none;
     color: #193dbf;
 }
 
+.service-content{
+  padding: 20px;
+}
+
 .service-row{
     display: flex;
     padding: 30px;
     justify-content: center;
 }
 
+.service-row.animate{
+  animation: fade-in 2s;
+}
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+    transform: translateY(-50px) scale(0.5);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
 .service-row-left{
-    width:50%;
+    width:55%;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -295,9 +312,9 @@ display: none;
 }
 
 .service-row-right{
-    width: 50%;
+    width: 45%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 
 .service-row-right img{
