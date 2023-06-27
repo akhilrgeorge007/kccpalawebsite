@@ -16,4 +16,4 @@ function menudisplay(){
     setTimeout(function(){
       loader.style.display="none";
       });
-    })
+})
