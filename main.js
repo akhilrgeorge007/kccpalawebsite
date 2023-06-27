@@ -99,14 +99,27 @@ function menudisplay(){
         imagePrevButton[i].addEventListener('click',imageShowPrevSlide);
         imageNextButton[i].addEventListener('click',imageShowNextSlide)
       }
+
+      const observer = new IntersectionObserver(entries => {
+        // Loop over the entries
+        entries.forEach(entry => {
+          // If the element is visible
+          if (entry.isIntersecting) {
+            // Add the animation class
+            entry.target.classList.add('animate');
+          }
+        });
+      });
+
+      observer.observe(this.document.querySelector('.project-carousel'))
   
-      
+      observer.observe(this.document.querySelector('.aboutus-content-para p'))
     
-    
-      // Automatically advance slides every 3 seconds
-      // setInterval(function() {
-      //   showSlide(currentSlide + 1);
-      // }, 4000);
+      observer.observe(this.document.querySelector('.services-content'))
+      //Automatically advance slides every 3 seconds
+      setInterval(function() {
+        showSlide(currentSlide + 1);
+      }, 4000);
     
     })
 

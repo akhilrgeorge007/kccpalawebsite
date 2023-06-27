@@ -304,6 +304,11 @@
     overflow: hidden;
 	background-color: #99a9e2 ;
 	border-radius: 20px;
+	
+  }
+
+  .project-carousel.animate{
+	animation: fade-in 2s;
   }
 
   .project-carousel-item{
@@ -481,10 +486,14 @@
   }
 
 
-  .aboutus-content-para h5{
+  .aboutus-content-para p{
 	font-size: 15px;
 	float: left;
 	width: 85%;
+  }
+
+  .aboutus-content-para p.animate{
+	animation: fade-in 2s;
   }
   
   /* button{
@@ -537,6 +546,10 @@
 	text-align: center;
 	padding: 20px;
 	margin-top: 20px;
+  }
+
+  .services-content.animate{
+	animation: fade-in 2s;
   }
 
   .services h2{
